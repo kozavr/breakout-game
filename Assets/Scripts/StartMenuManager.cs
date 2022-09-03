@@ -1,8 +1,8 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -27,8 +27,6 @@ public class StartMenuManager : MonoBehaviour
         {
             ScenePersistance.Instance.playerName = defaultUserName;
         }
-
-            // Debug.Log("inputField.text: " + inputField.text);
 
         SceneManager.LoadScene("main");
     }
